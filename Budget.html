@@ -78,7 +78,7 @@
             savedExpenses.forEach(expense => {
                 const expenseElement = document.createElement('div');
                 expenseElement.classList.add('expense');
-                expenseElement.innerText = `${expense.name}: $${expense.amount}`;
+                expenseElement.innerText = `${expense.name}: ₹${expense.amount}`;
                 expensesList.appendChild(expenseElement);
             });
         }
@@ -116,11 +116,11 @@
 
             if (destination && days && budget) {
                 // Simple AI response (you can replace this with real AI logic like OpenAI)
-                const tripPlan = `For a trip to ${destination} for ${days} days, your budget of $${budget} should cover:
-                - Flights: $300
-                - Accommodation: $500
-                - Food: $150
-                - Entertainment: $100`;
+                const tripPlan = `For a trip to ${destination} for ${days} days, your budget of ₹${budget} should cover:
+                - Flights: ₹26000
+                - Accommodation: ₹43000
+                - Food: ₹13000
+                - Entertainment: ₹10000`;
                 
                 document.getElementById('tripPlan').innerText = tripPlan;
             }
